@@ -12,7 +12,9 @@ class ExampleCommand extends Command
 
     public function handle(): int
     {
-        $this->comment('All done');
+        $text = config('example.command_output');
+
+        $this->comment($text);
 
         return self::SUCCESS;
     }
