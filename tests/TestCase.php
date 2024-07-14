@@ -2,10 +2,10 @@
 
 namespace AmirVahedix\Example\Tests;
 
+use AmirVahedix\Example\ExampleServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AmirVahedix\Example\ExampleServiceProvider;
 
 class TestCase extends Orchestra
 {

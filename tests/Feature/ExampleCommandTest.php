@@ -2,6 +2,7 @@
 
 use AmirVahedix\Example\Commands\ExampleCommand;
 use Illuminate\Console\Command;
+
 use function Pest\Laravel\artisan;
 
 it('can output the configured values', function () {
@@ -10,7 +11,7 @@ it('can output the configured values', function () {
         ->assertExitCode(Command::SUCCESS);
 });
 
-it ('can output another configured values', function () {
+it('can output another configured values', function () {
     config()->set('example.command_output', 'mr. pickles');
 
     artisan(ExampleCommand::class)

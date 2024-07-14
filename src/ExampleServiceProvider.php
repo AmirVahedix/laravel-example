@@ -2,9 +2,9 @@
 
 namespace AmirVahedix\Example;
 
+use AmirVahedix\Example\Commands\ExampleCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AmirVahedix\Example\Commands\ExampleCommand;
 
 class ExampleServiceProvider extends PackageServiceProvider
 {
